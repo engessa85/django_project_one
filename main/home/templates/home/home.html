@@ -1,0 +1,21 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	
+</head>
+<body>
+	<h1> {{page_title}} </h1>
+
+	<form method="POST" action=".">  {% csrf_token %}
+
+		{{forms.as_p}}
+
+
+		<input type="submit" value="save">
+	</form>
+ 
+</body>
+</html>
